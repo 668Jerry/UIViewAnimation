@@ -14,9 +14,26 @@
 
 @implementation ViewController
 
+- (void)aniSetAnimation:(UIView *) uivInputView {
+    UITapGestureRecognizer *singleFingerTap =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(handleSingleTap:)];
+    [uivInputView addGestureRecognizer:singleFingerTap];
+}
+
+- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
+    CGPoint cgpLocation = [recognizer locationInView:[recognizer.view superview]];
+    NSLog(@"x: %f, y: %f", cgpLocation.x, cgpLocation.y);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.view setBackgroundColor:[UIColor redColor]];
+    UIView *uivMove = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 30, 30)];
+    [uivMove setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:uivMove];
+    [self aniSetAnimation:uivMove];
 }
 
 - (void)didReceiveMemoryWarning {
