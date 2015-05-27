@@ -7,24 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "UIView+Animation.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
-- (void)aniSetAnimation:(UIView *) uivInputView {
-    UITapGestureRecognizer *singleFingerTap =
-    [[UITapGestureRecognizer alloc] initWithTarget:self
-                                            action:@selector(handleSingleTap:)];
-    [uivInputView addGestureRecognizer:singleFingerTap];
-}
-
-- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
-    CGPoint cgpLocation = [recognizer locationInView:[recognizer.view superview]];
-    NSLog(@"x: %f, y: %f", cgpLocation.x, cgpLocation.y);
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,7 +22,7 @@
     UIView *uivMove = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 30, 30)];
     [uivMove setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:uivMove];
-    [self aniSetAnimation:uivMove];
+    [uivMove moveTo:uivMove destination:CGPointMake(300, 300) duration:5 option:UIViewAnimationOptionLayoutSubviews];
 }
 
 - (void)didReceiveMemoryWarning {

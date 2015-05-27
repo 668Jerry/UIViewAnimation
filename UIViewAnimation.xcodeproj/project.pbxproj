@@ -15,6 +15,7 @@
 		8F2D09F11B13631400850DF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D09F01B13631400850DF7 /* Images.xcassets */; };
 		8F2D09F41B13631400850DF7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D09F21B13631400850DF7 /* LaunchScreen.xib */; };
 		8F2D0A001B13631500850DF7 /* UIViewAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D09FF1B13631500850DF7 /* UIViewAnimationTests.m */; };
+		8F2D0A0C1B15C89500850DF7 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0A0B1B15C89500850DF7 /* UIView+Animation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		8F2D09F91B13631500850DF7 /* UIViewAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2D09FE1B13631500850DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F2D09FF1B13631500850DF7 /* UIViewAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewAnimationTests.m; sourceTree = "<group>"; };
+		8F2D0A0A1B15C89500850DF7 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		8F2D0A0B1B15C89500850DF7 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				8F2D09E51B13631400850DF7 /* AppDelegate.m */,
 				8F2D09EA1B13631400850DF7 /* ViewController.h */,
 				8F2D09EB1B13631400850DF7 /* ViewController.m */,
+				8F2D0A0A1B15C89500850DF7 /* UIView+Animation.h */,
+				8F2D0A0B1B15C89500850DF7 /* UIView+Animation.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2D0A0C1B15C89500850DF7 /* UIView+Animation.m in Sources */,
 				8F2D09E91B13631400850DF7 /* UIViewAnimation.xcdatamodeld in Sources */,
 				8F2D09E61B13631400850DF7 /* AppDelegate.m in Sources */,
 				8F2D09EC1B13631400850DF7 /* ViewController.m in Sources */,
